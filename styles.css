@@ -11,10 +11,12 @@ header {
     text-align: left;
     padding: 1rem;
 }
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative; /* Wichtig: Positionierung des Eltern-Containers */
 }
 
 .logo {
@@ -35,6 +37,7 @@ header {
     text-decoration: none;
     font-size: 1rem;
 }
+
 /* Burger-Menü verstecken (Desktop-Ansicht) */
 .burger-menu {
     display: none;
@@ -49,30 +52,29 @@ main {
 }
 
 footer {
-        background-color: #333;
-        color: white;
-        padding: 1rem 0;
-        text-align: center;
-    }
-    
-    .footer-links {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .footer-links li a {
-        color: white;
-        text-decoration: none;
-        font-size: 1rem;
-    }
-    
-    .footer-links li a:hover {
-        text-decoration: underline;
-    }
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
 }
 
 /* Breakpoint für Handygröße (maximale Breite 360px) */
@@ -80,11 +82,12 @@ footer {
     .nav-links {
         display: none;
         flex-direction: column;
-        background-color: #4CAF50;
+        background-color: #cecdcd;
         position: absolute;
-        top: 100%;
+        top: 100%; /* Direkt unterhalb des Eltern-Containers */
         left: 0;
         width: 100%;
+        z-index: 1000; /* Menü überlagert andere Elemente */
     }
 
     .nav-links li {
@@ -103,12 +106,15 @@ footer {
     #menu-toggle:checked + .burger-menu + .nav-links {
         display: flex;
     }
+
     header {
         font-size: 1rem;
     }
+
     main {
         font-size: 0.9rem;
     }
+
     footer {
         font-size: 0.8rem;
     }
@@ -119,11 +125,13 @@ footer {
     header {
         font-size: 2rem;
     }
+
     main {
         font-size: 1.5rem;
         max-width: 1200px;
         margin: 0 auto;
     }
+
     footer {
         font-size: 1rem;
     }
