@@ -1,4 +1,4 @@
-/* Basis-Stil */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -35,17 +35,17 @@ header {
 
 /* Burger-Menü */
 .burger-menu {
-    display: none; /* Standardmäßig ausgeblendet */
+    display: none; 
 }
 
 #menu-toggle {
-    display: none; /* Versteckt das Checkbox-Element */
+    display: none; 
 }
 
-/* Container für Bild und Text */
+/* Container Bild und Text */
 .headline-container {
     display: flex;
-    align-items: stretch; /* Bild und Text gleich hoch */
+    align-items: stretch; 
     gap: 1rem;
     margin-top: 1rem;
 }
@@ -96,7 +96,7 @@ footer {
 /* Mobile Breakpoint (max-width: 768px) */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Standardmäßig ausblenden */
+        display: none; 
         flex-direction: column;
         gap: 0;
         background-color: #f4f4f4;
@@ -108,13 +108,13 @@ footer {
     }
 
     .burger-menu {
-        display: block; /* Burger-Menü nur mobil anzeigen */
+        display: block; 
         font-size: 1.5rem;
         cursor: pointer;
     }
 
     #menu-toggle:checked + .burger-menu + .nav-links {
-        display: flex; /* Navigation sichtbar machen */
+        display: flex; 
     }
 
     .headline-container {
@@ -124,19 +124,19 @@ footer {
     }
 
     .headline-image {
-        width: 100%; /* Bild füllt die Breite */
-        max-width: 200px; /* Maximale Größe begrenzen */
-        height: auto; /* Höhe proportional zur Breite */
+        width: 100%; 
+        max-width: 200px;
+        height: auto; 
     }
 }
 
 /* Desktop Breakpoint (ab 768px) */
 @media (min-width: 768px) {
     .burger-menu {
-        display: none; /* Burger-Menü nur mobil ausblenden */
+        display: none;
     }
 
     .nav-links {
-        display: flex; /* Navigation in der Desktop-Ansicht anzeigen */
+        display: flex;
     }
 }
