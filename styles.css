@@ -16,12 +16,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative; /* Wichtig: Positionierung des Eltern-Containers */
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    position: relative;
 }
 
 .nav-links {
@@ -38,13 +33,24 @@ header {
     font-size: 1rem;
 }
 
-/* Burger-Menü verstecken (Desktop-Ansicht) */
-.burger-menu {
-    display: none;
+/* Container für Bild und Text */
+.headline-container {
+    display: flex;
+    align-items: stretch; /* Bild und Text gleich hoch */
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
-#menu-toggle {
-    display: none;
+.headline-image {
+    width: auto;
+    height: 100%; /* Füllt die Höhe des Containers */
+    aspect-ratio: 1 / 1; /* Macht das Bild quadratisch */
+    object-fit: cover; /* Sorgt dafür, dass das Bild nicht verzerrt wird */
+    flex-shrink: 0; /* Bild bleibt unverändert */
+}
+
+.headline-text h1, .headline-text h2, .headline-text p {
+    margin: 0.5rem 0;
 }
 
 main {
@@ -77,50 +83,21 @@ footer {
     text-decoration: underline;
 }
 
-/* Breakpoint für Handygröße (maximale Breite 360px) */
+/* Breakpoints */
 @media (max-width: 360px) {
-    .nav-links {
-        display: none;
+    .headline-container {
         flex-direction: column;
-        background-color: #cecdcd;
-        position: absolute;
-        top: 100%; /* Direkt unterhalb des Eltern-Containers */
-        left: 0;
-        width: 100%;
-        z-index: 1000; /* Menü überlagert andere Elemente */
-    }
-
-    .nav-links li {
+        align-items: center;
         text-align: center;
-        padding: 0.5rem 0;
     }
 
-    /* Burger-Menü sichtbar machen */
-    .burger-menu {
-        display: block;
-        font-size: 2rem;
-        cursor: pointer;
-    }
-
-    /* Navigation anzeigen, wenn das Burger-Menü aktiviert ist */
-    #menu-toggle:checked + .burger-menu + .nav-links {
-        display: flex;
-    }
-
-    header {
-        font-size: 1rem;
-    }
-
-    main {
-        font-size: 0.9rem;
-    }
-
-    footer {
-        font-size: 0.8rem;
+    .headline-image {
+        height: auto;
+        width: 100%;
+        max-width: 200px; /* Begrenzung der Bildgröße */
     }
 }
 
-/* Breakpoint für große Bildschirme (minimale Breite 1920px) */
 @media (min-width: 1920px) {
     header {
         font-size: 2rem;
