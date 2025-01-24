@@ -1,0 +1,51 @@
+/* Basis-Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Breakpoint für Handygröße (maximale Breite 360px) */
+@media (max-width: 360px) {
+    header {
+        font-size: 1rem;
+    }
+    main {
+        font-size: 0.9rem;
+    }
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* Breakpoint für große Bildschirme (minimale Breite 1920px) */
+@media (min-width: 1920px) {
+    header {
+        font-size: 2rem;
+    }
+    main {
+        font-size: 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    footer {
+        font-size: 1rem;
+    }
+}
