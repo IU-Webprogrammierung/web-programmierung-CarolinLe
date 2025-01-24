@@ -33,6 +33,15 @@ header {
     font-size: 1rem;
 }
 
+/* Burger-Menü */
+.burger-menu {
+    display: none; /* Standardmäßig ausgeblendet */
+}
+
+#menu-toggle {
+    display: none; /* Versteckt das Checkbox-Element */
+}
+
 /* Container für Bild und Text */
 .headline-container {
     display: flex;
@@ -42,11 +51,12 @@ header {
 }
 
 .headline-image {
-    width: auto;
-    height: 100%; /* Füllt die Höhe des Containers */
-    aspect-ratio: 1 / 1; /* Macht das Bild quadratisch */
-    object-fit: cover; /* Sorgt dafür, dass das Bild nicht verzerrt wird */
-    flex-shrink: 0; /* Bild bleibt unverändert */
+    flex-shrink: 0; 
+    object-fit: cover; 
+    width: 60%; 
+    max-width: 550px; 
+    height: auto; 
+    aspect-ratio: 1 / 1; 
 }
 
 .headline-text h1, .headline-text h2, .headline-text p {
@@ -83,8 +93,30 @@ footer {
     text-decoration: underline;
 }
 
-/* Breakpoints */
-@media (max-width: 360px) {
+/* Mobile Breakpoint (max-width: 768px) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Standardmäßig ausblenden */
+        flex-direction: column;
+        gap: 0;
+        background-color: #f4f4f4;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .burger-menu {
+        display: block; /* Burger-Menü nur mobil anzeigen */
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #menu-toggle:checked + .burger-menu + .nav-links {
+        display: flex; /* Navigation sichtbar machen */
+    }
+
     .headline-container {
         flex-direction: column;
         align-items: center;
@@ -92,24 +124,19 @@ footer {
     }
 
     .headline-image {
-        height: auto;
-        width: 100%;
-        max-width: 200px; /* Begrenzung der Bildgröße */
+        width: 100%; /* Bild füllt die Breite */
+        max-width: 200px; /* Maximale Größe begrenzen */
+        height: auto; /* Höhe proportional zur Breite */
     }
 }
 
-@media (min-width: 1920px) {
-    header {
-        font-size: 2rem;
+/* Desktop Breakpoint (ab 768px) */
+@media (min-width: 768px) {
+    .burger-menu {
+        display: none; /* Burger-Menü nur mobil ausblenden */
     }
 
-    main {
-        font-size: 1.5rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    footer {
-        font-size: 1rem;
+    .nav-links {
+        display: flex; /* Navigation in der Desktop-Ansicht anzeigen */
     }
 }
