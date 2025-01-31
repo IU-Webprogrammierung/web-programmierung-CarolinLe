@@ -343,62 +343,83 @@ main {
 
 /* Projekte Hauptcontainer */
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten für Desktop */
-    gap: 40px;
-    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px; 
     max-width: 1200px;
-    padding: 20px;
+    margin: 0 auto;
 }
 
 .project-item {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    gap: 100px;
+    align-items: flex-start;
+}
+
+/* Regel für Projekt 2: Bild rechts, Text links und rechtsbündig */
+.project-item:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.project-item:nth-child(2) .project-details {
+    text-align: right; 
 }
 
 .project-image img {
-    width: 100%;
+    width: 500px; 
     height: auto;
-    object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    object-fit: cover;
 }
 
-.project-image img:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+.project-details {
+    flex: 1;
+    text-align: left;
 }
 
 .project-details h2 {
     font-size: 1.5rem;
     margin: 10px 0;
-    color: #333;
 }
 
 .project-details .project-type {
-    font-size: 1rem;
     font-weight: bold;
-    color: #666;
-}
-
-.project-details .project-description {
-    font-size: 0.9rem;
-    line-height: 1.5;
     color: #555;
 }
 
-/* Mobile Ansicht */
+.project-details .project-description {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsives Design für Mobile */
 @media (max-width: 768px) {
-    .projects-container {
-        grid-template-columns: 1fr; /* Eine Spalte für Mobilgeräte */
+    .project-item {
+        flex-direction: column;
+        align-items: center;
     }
 
     .project-image img {
-        border-radius: 0; /* Ecken entfernen */
+        width: 100%; 
+    }
+
+    .project-details {
+        text-align: center; 
+    }
+
+    /* Spezifisches Verhalten für Projekt 2 */
+    .project-item:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .project-item:nth-child(2) .project-details {
+        text-align: center;
     }
 }
+
+
+
 
 /* Footer */
 
