@@ -189,6 +189,69 @@ body {
     }
 }
 
+/* Kontaktformular Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+    border: none; 
+    box-shadow: none;
+    text-align: left;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form .char-counter {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
 /* Footer */
 
 footer {
