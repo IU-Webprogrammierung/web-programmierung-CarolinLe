@@ -6,6 +6,10 @@ body {
     line-height: 1.6;
 }
 
+main {
+    margin-bottom: 40px; 
+}
+
 /* Navigation */
 .navbar {
     position: relative;
@@ -189,18 +193,36 @@ body {
     }
 }
 
+/* Hauptüberschrift für Kontaktseite */
+.contact-headline {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: left; 
+    margin: 20px auto 10px;
+    max-width: 600px; 
+}
+
+.contact-description {
+    font-size: 1rem;
+    color: #555;
+    text-align: left; 
+    margin: 0 auto 20px;
+    max-width: 600px;
+}
+
 /* Kontaktformular Styling */
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
     max-width: 600px;
-    margin: 20px auto;
+    margin: 0 auto; 
     padding: 20px;
-    background-color: transparent;
+    background-color: transparent; 
     border: none; 
-    box-shadow: none;
-    text-align: left;
+    box-shadow: none; 
+    text-align: left; 
 }
 
 .contact-form label {
@@ -239,7 +261,7 @@ body {
 
 .contact-form button {
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #000000;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -249,7 +271,9 @@ body {
 }
 
 .contact-form button:hover {
-    background-color: #0056b3;
+    background-color: #5c5c5c;
+
+    
 }
 
 /* Footer */
