@@ -116,6 +116,12 @@ body {
 }
 
 /* Footer */
+
+footer {
+    background-color: #f2f2f2; 
+    padding-bottom: 30px;
+}
+
 .footer-links {
     list-style: none;
     display: flex;
