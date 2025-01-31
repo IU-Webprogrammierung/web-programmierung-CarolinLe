@@ -115,6 +115,19 @@ body {
     color: #666;
 }
 
+/* Banner */
+.banner {
+    background-color: #ccc; 
+    color: #333; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    text-align: center; 
+    padding: 10px 0; 
+    margin: 20px 0; 
+    font-size: 1rem;
+    letter-spacing: 1px; 
+}
+
 /* Footer */
 
 footer {
