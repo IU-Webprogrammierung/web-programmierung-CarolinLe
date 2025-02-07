@@ -341,13 +341,18 @@ main {
     
 }
 
-/* Projekte Hauptcontainer */
+/* Projekte-Hauptcontainer */
+.projects-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 100px; 
+}
+
 .projects-container {
     display: flex;
     flex-direction: column;
     gap: 100px; 
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 20px; 
 }
 
 .project-item {
@@ -416,8 +421,11 @@ main {
     .project-item:nth-child(2) .project-details {
         text-align: center;
     }
-}
 
+    .projects-wrapper {
+        padding-left: 20px; 
+    }
+}
 
 
 
