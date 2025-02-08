@@ -229,7 +229,7 @@ main {
 .about-image img {
     width: 100%;
     height: auto;
-    border-radius: 0px; 
+    border-radius: 10px; 
     object-fit: cover;
 }
 
