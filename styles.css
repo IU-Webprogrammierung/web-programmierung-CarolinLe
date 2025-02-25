@@ -1,4 +1,10 @@
 /* Allgemeines Styling */
+h1 {
+    text-transform: uppercase;
+}
+h2 {
+    text-transform: uppercase;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
