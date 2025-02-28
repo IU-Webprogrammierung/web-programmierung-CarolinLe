@@ -328,6 +328,21 @@ main {
     border-radius: 5px;
     box-sizing: border-box;
 }
+/* Fehlernachricht Styling */
+.contact-form .error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: none; 
+}
+
+/* Fehlerhafte Eingabefelder */
+.contact-form input.error,
+.contact-form textarea.error {
+    border-color: red;
+    outline: none;
+}
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
