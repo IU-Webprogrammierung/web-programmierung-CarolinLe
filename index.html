@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Webseite</title>
@@ -35,7 +36,7 @@
     </div>
     <main>
         <!-- Zusammenarbeit mit Brands -->
-        <section>
+        <section class="brand-logos-section">
             <h3>Zusammenarbeit mit Brands</h3>
             <p class="body-text">Mit diesen Brands durfte ich in der Vergangenheit zusammenarbeiten. Ich vertiefe mich in kürzere oder mehrjährige Projekte, welche ein tiefes Verständnis für die Marke, Werte und Ziele jedes Unternehmens und Projekts vermitteln, um das bestmögliche Ergebnis zu erzielen.</p>
             <div class="brand-logos">
@@ -55,11 +56,12 @@
         </section>
 
         <!-- Galerie -->
-        <section>
+        <section class="brand-logos-section">
             <h3>Meine Projekte</h3>
             <p class="body-text">Entdecke die neuesten Projekte und detaillierte Beschreibungen meiner Arbeit. Ob intuitive Interfaces, nahtlose User Journeys oder kreative Designlösungen: Meine Projekte sind geprägt von einem klaren Ziel – Menschen mit Technologie auf eine einfache und inspirierende Weise zu verbinden.</p>
-            <button class="contact-button">Zu den Projekten</button>
-            <div class="scrollable-gallery">
+            <button class="project-button">Zu den Projekten</button>
+            <p>
+                <div class="scrollable-gallery">
                 <div class="gallery-slider">
                     <div class="gallery-item">
                         <img src="images/projekt1.jpg" alt="Projekt 1">
@@ -76,6 +78,7 @@
                     <span class="arrow">▶</span>
                 </div>
             </div>
+        </p>
         </section>
     </main>
     <footer aria-label="Footerbereich">
