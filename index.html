@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-        <!-- Navigation -->
+    <!-- Navigation -->
     <header>
         <nav class="navbar">
             <input type="checkbox" id="menu-toggle">
@@ -19,14 +19,14 @@
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
-         <!-- Header Inhalt -->
+        <!-- Header Inhalt -->
         <div class="headline-container">
             <img src="images/profilbild.jpg" alt="Profilbild" class="headline-image">
             <div class="headline-text">
                 <h1>Ich bin Carolin.</h1>
-                <h2>Ux Designer</h2>
-                <p>Meine Mission ist es, digitale Erlebnisse zu gestalten, die nicht nur funktional, sondern auch intuitiv und ästhetisch sind.</p>
-                <p>Hier auf meiner Seite findest du mehr über meine Arbeit, meinen Ansatz und die Projekte, die mich inspiriert haben. Viel Spaß beim Entdecken!</p>
+                <h2>UX Designer</h2>
+                <p class="body-text">Meine Mission ist es, digitale Erlebnisse zu gestalten, die nicht nur funktional, sondern auch intuitiv und ästhetisch sind.</p>
+                <p class="body-text">Hier auf meiner Seite findest du mehr über meine Arbeit, meinen Ansatz und die Projekte, die mich inspiriert haben. Viel Spaß beim Entdecken!</p>
             </div>
         </div>
     </header>
@@ -34,32 +34,49 @@
         UX DESIGN * HUMAN CENTERED SOLUTIONS * USER RESEARCH * USABILITY TESTING * CREATIVE CONCEPTS
     </div>
     <main>
-        <div class="teasers">
-            <a href="about.html" class="teaser" aria-label="Gehe zu: Mehr über mich erfahren">
-                <div class="teaser-image">
-                    <img src="images/Teaser1.jpg" alt="Teaser 1">
+        <!-- Zusammenarbeit mit Brands -->
+        <section>
+            <h3>Zusammenarbeit mit Brands</h3>
+            <p class="body-text">Mit diesen Brands durfte ich in der Vergangenheit zusammenarbeiten. Ich vertiefe mich in kürzere oder mehrjährige Projekte, welche ein tiefes Verständnis für die Marke, Werte und Ziele jedes Unternehmens und Projekts vermitteln, um das bestmögliche Ergebnis zu erzielen.</p>
+            <div class="brand-logos">
+                <div class="image-row">
+                    <img src="images/brand1.jpg" alt="Brand 1" class="brand-image">
+                    <img src="images/brand2.jpg" alt="Brand 2" class="brand-image">
+                    <img src="images/brand3.jpg" alt="Brand 3" class="brand-image">
+                    <img src="images/brand4.jpg" alt="Brand 4" class="brand-image">
                 </div>
-                <div class="teaser-text">
-                    <p>Erfahre mehr über mich und meine Kompetenzen.</p>
+                <div class="image-row">
+                    <img src="images/brand5.jpg" alt="Brand 5" class="brand-image">
+                    <img src="images/brand6.jpg" alt="Brand 6" class="brand-image">
+                    <img src="images/brand7.jpg" alt="Brand 7" class="brand-image">
+                    <img src="images/brand8.jpg" alt="Brand 8" class="brand-image">
                 </div>
-            </a>
-            <a href="projekte.html" class="teaser" aria-label="Gehe zu: mein Portfolio mit Projekten">
-                <div class="teaser-image">
-                    <img src="images/Teaser2.jpg" alt="Teaser 2">
+            </div>
+        </section>
+
+        <!-- Galerie -->
+        <section>
+            <h3>Meine Projekte</h3>
+            <p class="body-text">Entdecke die neuesten Projekte und detaillierte Beschreibungen meiner Arbeit. Ob intuitive Interfaces, nahtlose User Journeys oder kreative Designlösungen: Meine Projekte sind geprägt von einem klaren Ziel – Menschen mit Technologie auf eine einfache und inspirierende Weise zu verbinden.</p>
+            <button class="contact-button">Zu den Projekten</button>
+            <div class="scrollable-gallery">
+                <div class="gallery-slider">
+                    <div class="gallery-item">
+                        <img src="images/projekt1.jpg" alt="Projekt 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/projekt2.jpg" alt="Projekt 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/projekt3.jpg" alt="Projekt 3">
+                    </div>
                 </div>
-                <div class="teaser-text">
-                    <p>Entdecke mein Portfolio mit den aktuellen Projekten.</p>
+                <div class="scroll-indicator">
+                    <span class="arrow">◀</span>
+                    <span class="arrow">▶</span>
                 </div>
-            </a>
-            <a href="kontakt.html" class="teaser" aria-label="Gehe zu: Kontaktformular">
-                <div class="teaser-image">
-                    <img src="images/Teaser3.jpg" alt="Teaser 3">
-                </div>
-                <div class="teaser-text">
-                    <p>Interessiert? Schicke mir eine Nachricht mit dem Kontaktformular.</p>
-                </div>
-            </a>
-        </div>
+            </div>
+        </section>
     </main>
     <footer aria-label="Footerbereich">
         <ul class="footer-links">
