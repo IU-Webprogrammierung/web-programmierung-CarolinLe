@@ -289,18 +289,94 @@ main {
     }
 }
 
-/* Banner */
+/* Allgemeines Styling */
 .banner {
-    background-color: #ccc; 
-    color: #333; 
-    font-weight: bold;
-    text-transform: uppercase; 
-    text-align: center; 
-    padding: 10px 0; 
-    margin: 20px 0; 
-    font-size: 1rem;
-    letter-spacing: 1px; 
+    width: 100%;
+    background-color: #cbd7f3; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    margin-bottom: 60px; 
 }
+
+.banner-container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.banner-text {
+    flex: 1;
+    color: #333;
+}
+
+.banner-text h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+.banner-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Responsive Design für Mobilgeräte */
+/* Tablet und kleiner */
+@media (max-width: 768px) {
+    .banner-container {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .banner-text {
+        margin-bottom: 20px; 
+    }
+
+    .banner-text h1 {
+        font-size: 1.6rem; 
+    }
+
+    .banner-text p {
+        font-size: 0.95rem;
+    }
+
+    .banner-image img {
+        max-width: 100%; 
+    }
+}
+
+/*  unter 480px */
+@media (max-width: 480px) {
+    .banner-text h1 {
+        font-size: 1.4rem; 
+    }
+
+    .banner-text p {
+        font-size: 0.85rem;
+    }
+}
+
 
 /* Styling für den Button "Zu den Projekten" */
 .project-button {
