@@ -102,17 +102,17 @@ main {
 
 /* Zusammenarbeit mit Brands */
 .brand-logos-section {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 0px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
-    text-align: left; 
+    align-items: flex-start;
+    text-align: left;
 }
 
 .brand-logos-section h3 {
-    margin-top: 0; 
+    margin-top: 0;
     font-size: 1.8rem;
     color: #333;
 }
@@ -124,19 +124,35 @@ main {
 }
 
 .brand-logos {
-    display: flex;
-    flex-wrap: wrap; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 Logos in einer Reihe */
     gap: 20px; 
-    justify-content: flex-start; 
 }
 
 .brand-image {
-    width: calc(25% - 20px); 
-    max-width: 200px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0px;
+    width: 100%; 
+    height: auto; 
+    border-radius: 0; 
+    object-fit: contain;
+    box-shadow: none; 
+    border: none; 
 }
+
+/* Media Query: maximal 768px */
+@media (max-width: 768px) {
+    .brand-logos {
+        grid-template-columns: repeat(3, 1fr); /* 3 Logos pro Reihe */
+    }
+}
+
+/* Media Query: maximal 480px */
+@media (max-width: 480px) {
+    .brand-logos {
+        grid-template-columns: repeat(2, 1fr); /* 2 Logos pro Reihe */
+    }
+}
+
+
 /* Navigation */
 .navbar {
     position: relative;
@@ -303,24 +319,6 @@ main {
 
 .project-button:hover {
     background-color: #5c5c5c;
-}
-
-/* Styling 4x2-Bilder */
-.brand-images {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin: 20px auto;
-    max-width: 1200px;
-    padding: 20px;
-}
-
-.brand-images img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Styling Slidebare Gallerie */
