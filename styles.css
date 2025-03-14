@@ -292,7 +292,7 @@ main {
 /* Allgemeines Styling */
 .banner {
     width: 100%;
-    background-color: #cbd7f3; 
+    background-color: #4258e9; 
     display: flex;
     justify-content: center;
     align-items: stretch; 
@@ -312,8 +312,8 @@ main {
 .banner-text {
     flex: 1;
     padding: 40px; 
-    color: #333;
-    background-color: #cbd7f3; 
+    color: #ffffff;
+    background-color: #4258e9; 
 }
 
 .banner-text h1 {
@@ -325,7 +325,7 @@ main {
 .banner-text p {
     font-size: 1rem;
     line-height: 1.5;
-    color: #666;
+    color: #ffffff;
 }
 
 .banner-image {
