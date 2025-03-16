@@ -76,7 +76,7 @@ main {
 .headline-text h2 {
     font-size: 1.8rem; 
     margin: 10px 0;
-    color: #4258e9;
+    color: #081eae;
 }
 
 .headline-text p {
@@ -267,7 +267,7 @@ main {
 .headline-text h2 {
     font-size: 1.8rem; 
     margin: 10px 0;
-    color: #4258e9;
+    color:#081eae;
 }
 
 .headline-text p {
@@ -379,10 +379,10 @@ main {
 /* Styling für den Button "Zu den Projekten" */
 .project-button {
     padding: 10px 20px;
-    background-color: #000000;
+    background-color: #081eae;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 40px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -392,7 +392,7 @@ main {
 }
 
 .project-button:hover {
-    background-color: #5c5c5c;
+    background-color: #3847aa;
 }
 
 /* Styling Slidebare Gallerie */
@@ -599,6 +599,46 @@ main {
     }
 }
 
+/* Allgemeine Stile für Buttons about.html */
+.about-content .project-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Primärer Button */
+.about-content .project-button:first-of-type {
+    background-color: #081eae;
+    color: white;
+}
+
+/* Sekundärer Button */
+.about-content .project-button:last-of-type {
+    background-color: white;
+    color: #081eae;
+    border: 2px solid #081eae;
+}
+
+/* Hover-Effekte */
+.about-content .project-button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Anpassungen */
+@media screen and (max-width: 768px) {
+    .about-content .project-button {
+        display: block;
+        width: 100%; 
+        margin: 10px 0; 
+    }
+}
 
 /* Kontaktformular Styling */
 .contact-form {
@@ -665,17 +705,17 @@ main {
 
 .contact-form button {
     padding: 10px 20px;
-    background-color: #000000;
+    background-color: #081eae;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 40px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #5c5c5c;
+    background-color: #4258e9;
 
     
 }
@@ -707,7 +747,7 @@ main {
 }
 
 .project-item:nth-child(2) .project-details {
-    text-align: right; 
+    text-align: left; 
 }
 
 .project-image img {
@@ -741,7 +781,7 @@ main {
 @media (max-width: 768px) {
     .project-item {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .project-image img {
@@ -749,7 +789,7 @@ main {
     }
 
     .project-details {
-        text-align: center; 
+        text-align: left; 
     }
 
     /* Spezifisches Verhalten für Projekt 2 */
@@ -759,6 +799,7 @@ main {
 
     .project-item:nth-child(2) .project-details {
         text-align: center;
+        text-align: left;
     }
 
     .projects-wrapper {
