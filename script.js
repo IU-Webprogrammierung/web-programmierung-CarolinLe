@@ -45,3 +45,24 @@ form.addEventListener('submit', (event) => {
         event.preventDefault();
     }
 });
+// Funktion zum Öffnen des Overlays
+function openOverlay(element) {
+    var overlay = document.getElementById('overlay');
+    var overlayImage = document.getElementById('overlay-image');
+    
+    // Setzt das Bild im Overlay auf das geklickte Bild
+    overlayImage.src = element.src;
+
+    // Zeigt das Overlay an
+    overlay.style.display = 'flex';
+}
+
+// Funktion zum Schließen des Overlays
+function closeOverlay(event) {
+    event.stopPropagation();  
+
+    var overlay = document.getElementById('overlay');
+    overlay.style.display = 'none'; 
+}
+
+

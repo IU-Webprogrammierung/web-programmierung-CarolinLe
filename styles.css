@@ -57,14 +57,14 @@ main {
 .headline-image {
     width: 250px; 
     height: 250px; 
-    border-radius:0px; 
+    border-radius: 0px; 
     object-fit: cover;
     flex-shrink: 0;
 }
 
 .headline-text {
     flex: 1; 
-    padding: 0 20px; 
+    padding: 20px; 
 }
 
 .headline-text h1 {
@@ -249,7 +249,7 @@ main {
 .headline-image {
     width: 250px; 
     height: 250px; 
-    border-radius: 10px; 
+    border-radius: 0px; 
     object-fit: cover;
     flex-shrink: 0; /
 }
@@ -397,10 +397,11 @@ main {
 
 /* Styling Slidebare Gallerie */
 .gallery-container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 20px auto;
-    padding: 20px;
+    padding: 0;
     position: relative;
+    overflow-x: hidden;
 }
 
 .gallery-slider {
@@ -414,7 +415,7 @@ main {
 .gallery-item {
     flex-shrink: 0;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 0px;
     scroll-snap-align: start;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -425,7 +426,7 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 00px;
+    border-radius: 0px;
 }
 
 /* Styling Gallerie-Pfeile */
@@ -456,24 +457,66 @@ main {
 
 /* Desktop: 2 Bilder groß + 1 Anschnitt */
 @media (min-width: 768px) {
-    .gallery-item {
-        width: calc(40% - 10px); 
-        height: 300px; 
+    .gallery-container {
+        padding: 0 20px;
     }
+
+    .gallery-item {
+        width: calc(50% - 10px);
+        height: 400px;
+    }
+
     .gallery-slider {
-        gap: 15px; 
+        gap: 20px;
     }
 }
 
 /* Mobile: 1 Bild + 1 Anschnitt */
 @media (max-width: 767px) {
-    .gallery-item {
-        width: calc(100% - 20px); 
+    .gallery-container {
+        padding: 0 20px;
     }
+
+    .gallery-item {
+        width: calc(100% - 20px);
+        height: 300px;
+    }
+
     .gallery-slider {
-        gap: 10px; 
+        gap: 10px;
     }
 }
+
+/* Overlay-Styling */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);  
+    display: none;  
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;  
+}
+
+.overlay img {
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;  
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+}
+
 
 /* Bild Container */
 .teaser-image {
