@@ -50,10 +50,10 @@ function openOverlay(element) {
     var overlay = document.getElementById('overlay');
     var overlayImage = document.getElementById('overlay-image');
     
-    // Setzt das Bild im Overlay auf das geklickte Bild
+    
     overlayImage.src = element.src;
 
-    // Zeigt das Overlay an
+    
     overlay.style.display = 'flex';
 }
 
