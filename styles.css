@@ -48,10 +48,12 @@ main {
     align-items: center;
     justify-content: start;
     gap: 40px; 
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px; 
+    max-width: 100%;
+    margin: 0px;
+    padding: 40px 0;
     text-align: left; 
+    background-color: #e3e7ff;
+    
 }
 
 .headline-image {
@@ -76,7 +78,7 @@ main {
 .headline-text h2 {
     font-size: 1.8rem; 
     margin: 10px 0;
-    color: #081eae;
+    color: #333;
 }
 
 .headline-text p {
@@ -267,7 +269,7 @@ main {
 .headline-text h2 {
     font-size: 1.8rem; 
     margin: 10px 0;
-    color:#081eae;
+    color:#333;
 }
 
 .headline-text p {
