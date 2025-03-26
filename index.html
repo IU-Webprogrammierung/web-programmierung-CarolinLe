@@ -22,7 +22,7 @@
             </ul>
         </nav>
         <!-- Header Inhalt -->
-            <div class="headline-container">
+        <div class="headline-container">
             <img src="images/profilbild.webp" alt="Profilbild" class="headline-image" aria-label="Profilbild Carolin Lessing">
             <div class="headline-text">
                 <h1>Ich bin Carolin.</h1>
@@ -42,65 +42,58 @@
             <img src="images/Image_Banner.webp" alt="Bild im Banner" aria-label="3D Bild mit herausgestellten Komponenten">
           </div>
         </div>
-      </section>
+    </section>
     <main>
-<!-- Zusammenarbeit mit Brands -->
-<section class="brand-logos-section">
-    <h3>Zusammenarbeit mit Brands</h3>
-    <p class="body-text">
-        Mit diesen Brands durfte ich in der Vergangenheit zusammenarbeiten. Ich vertiefe mich in kürzere oder 
-        mehrjährige Projekte, welche ein tiefes Verständnis für die Marke, Werte und Ziele jedes Unternehmens 
-        und Projekts vermitteln, um das bestmögliche Ergebnis zu erzielen.
-    </p>
-    <div class="brand-logos">
-        <img src="images/Logo1.webp" alt="Merrit" class="brand-image" aria-label="Logo von Merrit">
-        <img src="images/Logo2.webp" alt="Stevens GbmbH" class="brand-image" aria-label="Logo von Stevens GmbH">
-        <img src="images/Logo3.webp" alt="Finance Solution GmbH" class="brand-image" aria-label="Logo von Finance Solution GmbH">
-        <img src="images/Logo4.webp" alt="Beehive & Co" class="brand-image" aria-label="Logo von Beehive & Co">
-        <img src="images/Logo5.webp" alt="My Choice" class="brand-image" aria-label="Logo von My Choice">
-        <img src="images/Logo6.webp" alt="Exchange" class="brand-image" aria-label="Logo von Exchange">
-        <img src="images/Logo7.webp" alt="ABC Solutions" class="brand-image" aria-label="Logo von ABC Solutions">
-        <img src="images/Logo8.webp" alt="Cloud" class="brand-image" aria-label="Logo von Cloud">
-    </div>
-    
-</section>
+        <!-- Zusammenarbeit mit Brands -->
+        <section class="brand-logos-section">
+            <h3>Zusammenarbeit mit Brands</h3>
+            <p class="body-text">
+                Mit diesen Brands durfte ich in der Vergangenheit zusammenarbeiten. Ich vertiefe mich in kürzere oder 
+                mehrjährige Projekte, welche ein tiefes Verständnis für die Marke, Werte und Ziele jedes Unternehmens 
+                und Projekts vermitteln, um das bestmögliche Ergebnis zu erzielen.
+            </p>
+            <div class="brand-logos">
+                <img src="images/Logo1.webp" alt="Merrit" class="brand-image" aria-label="Logo von Merrit">
+                <img src="images/Logo2.webp" alt="Stevens GbmbH" class="brand-image" aria-label="Logo von Stevens GmbH">
+                <img src="images/Logo3.webp" alt="Finance Solution GmbH" class="brand-image" aria-label="Logo von Finance Solution GmbH">
+                <img src="images/Logo4.webp" alt="Beehive & Co" class="brand-image" aria-label="Logo von Beehive & Co">
+                <img src="images/Logo5.webp" alt="My Choice" class="brand-image" aria-label="Logo von My Choice">
+                <img src="images/Logo6.webp" alt="Exchange" class="brand-image" aria-label="Logo von Exchange">
+                <img src="images/Logo7.webp" alt="ABC Solutions" class="brand-image" aria-label="Logo von ABC Solutions">
+                <img src="images/Logo8.webp" alt="Cloud" class="brand-image" aria-label="Logo von Cloud">
+            </div>
+        </section>
 
         <!-- Galerie -->
-<section class="brand-logos-section">
-    <p>
-        <h3>Meine Projekte</h3>
-        <p class="body-text">Entdecke die neuesten Projekte und detaillierte Beschreibungen meiner Arbeit. Ob intuitive Interfaces, nahtlose User Journeys oder kreative Designlösungen: Meine Projekte sind geprägt von einem klaren Ziel – Menschen mit Technologie auf eine einfache und inspirierende Weise zu verbinden.</p>
-        <a href="projekte.html" class="project-button">Zu den Projekten</a>
-    </p>
-    <div class="scrollable-gallery">
-        <div class="gallery-slider">
-            <div class="gallery-item">
-                <img src="images/projekt1.webp" alt="Projekt 1" onclick="openOverlay(this)" aria-label="Projekt1">
+        <section class="brand-logos-section">
+            <h3>Meine Projekte</h3>
+            <p class="body-text">Entdecke die neuesten Projekte und detaillierte Beschreibungen meiner Arbeit. Ob intuitive Interfaces, nahtlose User Journeys oder kreative Designlösungen: Meine Projekte sind geprägt von einem klaren Ziel – Menschen mit Technologie auf eine einfache und inspirierende Weise zu verbinden.</p>
+            <a href="projekte.html" class="project-button">Zu den Projekten</a>
+            <div class="scrollable-gallery">
+                <div class="gallery-slider">
+                    <div class="gallery-item">
+                        <img src="images/projekt1.webp" alt="Projekt 1" onclick="openOverlay(this)" aria-label="Projekt1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/projekt2.webp" alt="Projekt 2" onclick="openOverlay(this)" aria-label="Projekt2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/projekt3.webp" alt="Projekt 3" onclick="openOverlay(this)" aria-label="Projekt3">
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <span class="arrow">◀</span>
+                    <span class="arrow">▶</span>
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="images/projekt2.webp" alt="Projekt 2" onclick="openOverlay(this)" aria-label="Projekt2">
-            </div>
-            <div class="gallery-item">
-                <img src="images/projekt3.webp" alt="Projekt 3" onclick="openOverlay(this)" aria-label="Projekt3">
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span class="arrow">◀</span>
-            <span class="arrow">▶</span>
-        </div>
-    </div>
 
-    <!-- Das Overlay -->
-    <div id="overlay" class="overlay" onclick="closeOverlay(event)">
-        <span class="close-btn" onclick="closeOverlay(event)">×</span>
-        <img id="overlay-image" src="" alt="Vergrößertes Bild">
-    </div>
-</section>
-
-</section>
-        </p>
+            <!-- Das Overlay -->
+            <div id="overlay" class="overlay" onclick="closeOverlay(event)">
+                <span class="close-btn" onclick="closeOverlay(event)">×</span>
+                <img id="overlay-image" src="" alt="Vergrößertes Bild">
+            </div>
         </section>
-        </main>
+    </main>
     <footer aria-label="Footerbereich">
         <ul class="footer-links">
             <li><a href="impressum.html">Impressum</a></li>
