@@ -375,9 +375,6 @@ main {
     }
 }
 
-
-
-
 /* Styling für den Button "Zu den Projekten" */
 .project-button {
     padding: 10px 20px;
@@ -656,6 +653,8 @@ main {
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 200px; 
+    box-sizing: border-box; 
 }
 
 /* Primärer Button */
@@ -678,12 +677,20 @@ main {
 
 /* Responsive Anpassungen */
 @media screen and (max-width: 768px) {
+    .about-content {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 20px; 
+        align-items: flex-start; 
+    }
+
     .about-content .project-button {
-        display: block;
-        width: 100%; 
+        flex: 0 1 auto;
+        width: 45%; 
         margin: 10px 0; 
     }
 }
+
 
 /* Kontaktformular Styling */
 .contact-form {
