@@ -118,6 +118,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+    margin-bottom: 50px;
 }
 
 .brand-logos-section h3 {
@@ -404,13 +405,21 @@ main {
     overflow-x: hidden;
 }
 
+/* Styling für sanfteres Dragging */
 .gallery-slider {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     gap: 20px;
     padding-bottom: 20px;
+    cursor: grab;
+    scroll-behavior: smooth; 
 }
+
+.gallery-slider.active {
+    cursor: grabbing;
+}
+
 
 .gallery-item {
     flex-shrink: 0;
@@ -506,6 +515,7 @@ main {
     cursor: pointer;
     z-index: 1001;
 }
+
 
 
 /* Bild Container */
