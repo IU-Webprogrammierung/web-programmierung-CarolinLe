@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Über mich</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -24,8 +25,20 @@
     <!-- Hauptinhalt -->
     <main class="about-container">
         <div class="about-image">
-            <img src="images/image_about.webp" alt="Bild von Carolin Lessing">
+            <div class="gallery">
+                <div class="gallery-slider">
+                    <img src="images/image2_about.png" alt="Bild 1">
+                    <img src="images/image_about.webp" alt="Bild 2">
+                    <img src="images/image3_about.png" alt="Bild 3">
+                </div>
+                <div class="gallery-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
         </div>
+        
         <div class="about-content">
             <h2>Über mich</h2>
             <p>Hallo, ich bin Carolin! Seitdem ich seit 2014 als gelernte Mediendesignerin im Bereich Kommunikationsdesign, 
