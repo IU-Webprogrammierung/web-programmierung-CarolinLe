@@ -429,16 +429,6 @@ main {
     border-radius: 0px;
 }
 
-/* Styling Gallerie-Pfeile */
-.gallery-navigation {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
 .gallery-navigation button {
     background-color: #000000;
     color: #fff;
