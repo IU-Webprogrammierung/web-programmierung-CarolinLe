@@ -574,12 +574,12 @@ main {
 
     .about-image {
         margin-right: 20px;
-        width:100%;  
-        max-width: 400px; 
+        width:230%;  
+        max-width: 1200px; 
     }
 
     .about-text {
-        width: 55%;  
+        width: 30%;  
     }
 }
 
