@@ -139,36 +139,4 @@ function handleWheelScroll(e) {
     gallerySlider.scrollLeft += e.deltaY * 1.5; 
 }
 
-// Galerie mit Dots auf der "Über mich"-Seite
-document.addEventListener("DOMContentLoaded", () => {
-    const gallery = document.querySelector('.about-image .gallery');
-    if (!gallery) return; // Keine Galerie auf dieser Seite, abbrechen
-
-    const slider = gallery.querySelector('.gallery-slider');
-    const dots = gallery.querySelectorAll('.dot');
-
-    let currentIndex = 0;
-
-    // Funktion, um zur nächsten Folie zu wechseln
-    function updateGallery(index) {
-        currentIndex = index;
-        const slideWidth = slider.offsetWidth;
-        slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-
-        // Aktive Dot aktualisieren
-        dots.forEach((dot, i) => {
-            dot.classList.toggle('active', i === currentIndex);
-        });
-    }
-
-    // Event Listener für die Dots
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            updateGallery(index);
-        });
-    });
-
-    // Initialisierung: Erste Folie anzeigen
-    updateGallery(0);
-});
 
